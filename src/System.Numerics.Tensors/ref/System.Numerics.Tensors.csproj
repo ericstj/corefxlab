@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\tools\common.props" />
+  <PropertyGroup>
+    <Description>Tensor class which represents and extends multi-dimensional arrays</Description>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageTags>.NET Tensor Array corefxlab</PackageTags>
+    <!-- disable automatic compile item inclusion so that we can set the correct metadata on TextTemplate-generated sources -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System.Numerics.Tensors.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Buffers.Primitives\System.Buffers.Primitives.csproj" />
+  </ItemGroup>
+</Project>
