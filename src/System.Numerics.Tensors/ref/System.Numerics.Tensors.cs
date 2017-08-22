@@ -1,67 +1,114 @@
-namespace System.Numerics
+using System.Collections.Generic;
+
+namespace System.Numerics.Tensors
 {
     public static partial class Tensor
     {
-        public static System.Numerics.Tensor<T> Add<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Add<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Add<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Add<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> And<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void And<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> And<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void And<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Contract<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, int[] leftAxes, int[] rightAxes) { throw null; }
-        public static void Contract<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, int[] leftAxes, int[] rightAxes, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Decrement<T>(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static void Decrement<T>(System.Numerics.Tensor<T> tensor, System.Numerics.Tensor<T> result) { }
-        public static void DecrementInPlace<T>(System.Numerics.Tensor<T> tensor) { }
-        public static System.Numerics.Tensor<T> Divide<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Divide<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Divide<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Divide<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<bool> Equals<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Equals<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<bool> GreaterThan<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void GreaterThan<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<bool> GreaterThanOrEqual<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void GreaterThanOrEqual<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<T> Increment<T>(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static void Increment<T>(System.Numerics.Tensor<T> tensor, System.Numerics.Tensor<T> result) { }
-        public static void IncrementInPlace<T>(System.Numerics.Tensor<T> tensor) { }
-        public static System.Numerics.Tensor<T> LeftShift<T>(System.Numerics.Tensor<T> tensor, int value) { throw null; }
-        public static void LeftShift<T>(System.Numerics.Tensor<T> tensor, int value, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<bool> LessThan<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void LessThan<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<bool> LessThanOrEqual<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void LessThanOrEqual<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<T> Modulo<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Modulo<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Modulo<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Modulo<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Multiply<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Multiply<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Multiply<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Multiply<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<bool> NotEquals<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void NotEquals<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<bool> result) { }
-        public static System.Numerics.Tensor<T> Or<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Or<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Or<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Or<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> RightShift<T>(System.Numerics.Tensor<T> tensor, int value) { throw null; }
-        public static void RightShift<T>(System.Numerics.Tensor<T> tensor, int value, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Subtract<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Subtract<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Subtract<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Subtract<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> UnaryMinus<T>(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static void UnaryMinus<T>(System.Numerics.Tensor<T> tensor, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> UnaryPlus<T>(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static void UnaryPlus<T>(System.Numerics.Tensor<T> tensor, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Xor<T>(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static void Xor<T>(System.Numerics.Tensor<T> tensor, T scalar, System.Numerics.Tensor<T> result) { }
-        public static System.Numerics.Tensor<T> Xor<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static void Xor<T>(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right, System.Numerics.Tensor<T> result) { }
+
+        #region operations
+        public static Tensor<T> Add<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Add<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Add<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Add<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<T> And<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void And<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> And<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void And<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<T> Contract<T>(Tensor<T> left, Tensor<T> right, int[] leftAxes, int[] rightAxes) { throw null; }
+        public static void Contract<T>(Tensor<T> left, Tensor<T> right, int[] leftAxes, int[] rightAxes, Tensor<T> result) { }
+        public static Tensor<T> Decrement<T>(Tensor<T> tensor) { throw null; }
+        public static void Decrement<T>(Tensor<T> tensor, Tensor<T> result) { }
+        public static void DecrementInPlace<T>(Tensor<T> tensor) { }
+        public static Tensor<T> Divide<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Divide<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Divide<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Divide<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<bool> Equals<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Equals<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<bool> GreaterThan<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void GreaterThan<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<bool> GreaterThanOrEqual<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void GreaterThanOrEqual<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<T> Increment<T>(Tensor<T> tensor) { throw null; }
+        public static void Increment<T>(Tensor<T> tensor, Tensor<T> result) { }
+        public static void IncrementInPlace<T>(Tensor<T> tensor) { }
+        public static Tensor<T> LeftShift<T>(Tensor<T> tensor, int value) { throw null; }
+        public static void LeftShift<T>(Tensor<T> tensor, int value, Tensor<T> result) { }
+        public static Tensor<bool> LessThan<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void LessThan<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<bool> LessThanOrEqual<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void LessThanOrEqual<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<T> Modulo<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Modulo<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Modulo<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Modulo<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<T> Multiply<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Multiply<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Multiply<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Multiply<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<bool> NotEquals<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void NotEquals<T>(Tensor<T> left, Tensor<T> right, Tensor<bool> result) { }
+        public static Tensor<T> Or<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Or<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Or<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Or<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<T> RightShift<T>(Tensor<T> tensor, int value) { throw null; }
+        public static void RightShift<T>(Tensor<T> tensor, int value, Tensor<T> result) { }
+        public static Tensor<T> Subtract<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Subtract<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Subtract<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Subtract<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        public static Tensor<T> UnaryMinus<T>(Tensor<T> tensor) { throw null; }
+        public static void UnaryMinus<T>(Tensor<T> tensor, Tensor<T> result) { }
+        public static Tensor<T> UnaryPlus<T>(Tensor<T> tensor) { throw null; }
+        public static void UnaryPlus<T>(Tensor<T> tensor, Tensor<T> result) { }
+        public static Tensor<T> Xor<T>(Tensor<T> tensor, T scalar) { throw null; }
+        public static void Xor<T>(Tensor<T> tensor, T scalar, Tensor<T> result) { }
+        public static Tensor<T> Xor<T>(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static void Xor<T>(Tensor<T> left, Tensor<T> right, Tensor<T> result) { }
+        #endregion
+
+        #region factory methods
+
+        public static DenseTensor<T> CreateFromDiagonal<T>(Tensor<T> diagonal) { throw null; }
+        public static DenseTensor<T> CreateFromDiagonal<T>(Tensor<T> diagonal, int offset) { throw null; }
+        public static DenseTensor<T> CreateIdentity<T>(int size) { throw null; }
+        public static DenseTensor<T> CreateIdentity<T>(int size, bool columMajor) { throw null; }
+        public static DenseTensor<T> CreateIdentity<T>(int size, bool columMajor, T oneValue) { throw null; }
+
+        public static CompressedSparseTensor<T> CreateSparseTensor<T>(Tensor<T> tensor) { throw null; }
+
+        public static CompressedSparseTensor<T> CreateCompressedSparseTensor<T>(Tensor<T> tensor) { throw null; }
+        public static CompressedSparseTensor<T> CreateCompressedSparseTensor<T>(Tensor<T> tensor, bool compressColumn) { throw null; }
+
+        public static CompressedSparseTensor<T> CreateFromCompressedSparseRows<T>(Buffer<T> values, Buffer<int> rowCounts, Buffer<int> remainingIndices, params int[] dimensions) { throw null; }
+        public static CompressedSparseTensor<T> CreateFromCompressedSparseColumns<T>(Buffer<T> values, Buffer<int> columnCounts, Buffer<int> remainingIndices, params int[] dimensions) { throw null; }
+
+        #endregion
+    }
+
+    public static class BufferTensorExtensions
+    {
+        public static DenseTensor<T> AsTensor<T>(this Buffer<T> buffer, params int[] dimensions) { throw null; }
+        public static DenseTensor<T> AsTensor<T>(this Buffer<T> buffer, bool columnMajor, params int[] dimensions) { throw null; }
+    }
+
+    public static class ArrayTensorExtensions
+    {
+        public static DenseTensor<T> ToTensor<T>(this T[] array) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this T[,] array) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this T[,,] array) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this Array array) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this T[] array, bool columnMajor) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this T[,] array, bool columnMajor) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this T[,,] array, bool columnMajor) { throw null; }
+        public static DenseTensor<T> ToTensor<T>(this Array array, bool columnMajor) { throw null; }
+
+        // todo: ToSparseTensor and ToCompressedSparseTensor
+
+        public static DenseTensor<T> AsTensor<T>(this T[] array, params int[] dimensions) { throw null; }
+        public static DenseTensor<T> AsTensor<T>(this T[] array, bool columnMajor, params int[] dimensions) { throw null; }
+        public static DenseTensor<T> AsTensor<T>(this T[] array, int offeset, bool columnMajor, params int[] dimensions) { throw null; }
     }
 
 
@@ -71,60 +118,67 @@ namespace System.Numerics
         public System.Collections.Generic.IReadOnlyList<int> Dimensions { get { throw null; } }
         public bool IsFixedSize { get { throw null; } }
         public bool IsReadOnly { get { throw null; } }
-        public abstract T this[int index] { get; set; }
-        public abstract T this[int indexRow, int indexColumn] { get; set; }
-        public abstract T this[params int[] indices] { get; set; }
+        public virtual T this[int index] { get { throw null; } set { throw null; } }
+        public virtual T this[int indexRow, int indexColumn] { get { throw null; } set { throw null; } }
+        public virtual T this[params int[] indices] { get { throw null; } set { throw null; } }
+        public abstract T this[Span<int> indices] { get; set; }
         public int Length { get { throw null; } }
         public int Rank { get { throw null; } }
-        public abstract System.Numerics.Tensor<T> Clone();
-        public abstract System.Numerics.Tensor<T> CloneEmpty();
-        public abstract System.Numerics.Tensor<TResult> CloneEmpty<TResult>();
-        
+        public abstract Tensor<T> Clone();
+        public abstract Tensor<T> CloneEmpty();
+        public abstract Tensor<TResult> CloneEmpty<TResult>();
+
+        public virtual bool IsSparse { get { throw null; } }
+        public virtual int NonZeroLength { get { throw null; } }
+        public virtual int[] GetIndexAt(int nonZeroOffset) { throw null; }
+        public virtual int[] GetValueAt(int nonZeroOffset) { throw null; }
+
+
         public virtual void Fill(T value) { }
-        public virtual System.Numerics.Tensor<T> GetDiagonal() { throw null; }
-        public virtual System.Numerics.Tensor<T> GetDiagonal(int offset) { throw null; }
-        public virtual System.Numerics.Tensor<T> GetTriangle() { throw null; }
-        public virtual System.Numerics.Tensor<T> GetTriangle(int offset) { throw null; }
-        public virtual System.Numerics.Tensor<T> GetUpperTriangle() { throw null; }
-        public virtual System.Numerics.Tensor<T> GetUpperTriangle(int offset) { throw null; }
-        public virtual System.Numerics.Tensor<T> Reshape(params int[] dimensions) { throw null; }
+        public virtual Tensor<T> GetDiagonal() { throw null; }
+        public virtual Tensor<T> GetDiagonal(int offset) { throw null; }
+        public virtual Tensor<T> GetTriangle() { throw null; }
+        public virtual Tensor<T> GetTriangle(int offset) { throw null; }
+        public virtual Tensor<T> GetUpperTriangle() { throw null; }
+        public virtual Tensor<T> GetUpperTriangle(int offset) { throw null; }
+        public virtual Tensor<T> Reshape(params int[] dimensions) { throw null; }
 
         #region comparison
-        public static int Compare(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static bool Equals(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
+        public static int Compare(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static bool Equals(Tensor<T> left, Tensor<T> right) { throw null; }
 
         public override bool Equals(object obj) { throw null; }
         public override int GetHashCode() { throw null; }
         #endregion
 
         #region operators
-        public static System.Numerics.Tensor<T> operator +(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator +(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator &(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator &(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator |(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator |(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator --(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static System.Numerics.Tensor<T> operator /(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator /(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator ^(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator ^(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator ++(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static System.Numerics.Tensor<T> operator <<(System.Numerics.Tensor<T> tensor, int value) { throw null; }
-        public static System.Numerics.Tensor<T> operator %(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator %(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator *(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator *(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator >>(System.Numerics.Tensor<T> tensor, int value) { throw null; }
-        public static System.Numerics.Tensor<T> operator -(System.Numerics.Tensor<T> tensor, T scalar) { throw null; }
-        public static System.Numerics.Tensor<T> operator -(System.Numerics.Tensor<T> left, System.Numerics.Tensor<T> right) { throw null; }
-        public static System.Numerics.Tensor<T> operator -(System.Numerics.Tensor<T> tensor) { throw null; }
-        public static System.Numerics.Tensor<T> operator +(System.Numerics.Tensor<T> tensor) { throw null; }
+        public static Tensor<T> operator +(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator +(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator &(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator &(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator |(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator |(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator --(Tensor<T> tensor) { throw null; }
+        public static Tensor<T> operator /(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator /(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator ^(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator ^(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator ++(Tensor<T> tensor) { throw null; }
+        public static Tensor<T> operator <<(Tensor<T> tensor, int value) { throw null; }
+        public static Tensor<T> operator %(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator %(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator *(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator *(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator >>(Tensor<T> tensor, int value) { throw null; }
+        public static Tensor<T> operator -(Tensor<T> tensor, T scalar) { throw null; }
+        public static Tensor<T> operator -(Tensor<T> left, Tensor<T> right) { throw null; }
+        public static Tensor<T> operator -(Tensor<T> tensor) { throw null; }
+        public static Tensor<T> operator +(Tensor<T> tensor) { throw null; }
         #endregion
 
         #region other math
-        public System.Numerics.Tensor<T> Contract(System.Numerics.Tensor<T> right, int[] axes, int[] rightAxes) { throw null; }
-        public System.Numerics.Tensor<T> MatrixMultiply(System.Numerics.Tensor<T> right) { throw null; }
+        public Tensor<T> Contract(Tensor<T> right, int[] axes, int[] rightAxes) { throw null; }
+        public Tensor<T> MatrixMultiply(Tensor<T> right) { throw null; }
         #endregion
 
         #region interfaces
@@ -147,31 +201,6 @@ namespace System.Numerics
         #endregion
     }
 
-    public static partial class DenseTensor
-    {
-        public static DenseTensor<T> CreateFromDiagonal<T>(System.Numerics.Tensor<T> diagonal) { throw null; }
-        public static DenseTensor<T> CreateFromDiagonal<T>(System.Numerics.Tensor<T> diagonal, int offset) { throw null; }
-        public static DenseTensor<T> CreateIdentity<T>(int size) { throw null; }
-        public static DenseTensor<T> CreateIdentity<T>(int size, bool columMajor) { throw null; }
-        public static DenseTensor<T> CreateIdentity<T>(int size, bool columMajor, T oneValue) { throw null; }
-
-        public static DenseTensor<T> FromArray<T>(T[] array) { throw null; }
-        public static DenseTensor<T> FromArray<T>(T[,] array) { throw null; }
-        public static DenseTensor<T> FromArray<T>(T[,,] array) { throw null; }
-        public static DenseTensor<T> FromArray<T>(Array array) { throw null; }
-        public static DenseTensor<T> FromArray<T>(T[] array, bool columnMajor) { throw null; }
-        public static DenseTensor<T> FromArray<T>(T[,] array, bool columnMajor) { throw null; }
-        public static DenseTensor<T> FromArray<T>(T[,,] array, bool columnMajor) { throw null; }
-        public static DenseTensor<T> FromArray<T>(Array array, bool columnMajor) { throw null; }
-
-
-        public static DenseTensor<T> OverBuffer<T>(Buffer<T> buffer, params int[] dimensions) { throw null; }
-        public static DenseTensor<T> OverBuffer<T>(Buffer<T> buffer, bool columnMajor, params int[] dimensions) { throw null; }
-        public static DenseTensor<T> OverArray<T>(T[] array, params int[] dimensions) { throw null; }
-        public static DenseTensor<T> OverArray<T>(T[] array, bool columnMajor, params int[] dimensions) { throw null; }
-
-    }
-
     public partial class DenseTensor<T> : Tensor<T>
     {
         public DenseTensor(params int[] dimensions) : base(dimensions) { }
@@ -180,9 +209,7 @@ namespace System.Numerics
         public DenseTensor(Buffer<T> buffer, params int[] dimensions) : base(dimensions) { }
         public DenseTensor(Buffer<T> buffer, bool columnMajor, params int[] dimensions) : base(dimensions) { }
 
-        public override T this[int index] { get => throw null; set => throw null; }
-        public override T this[params int[] indices] { get => throw null; set => throw null; }
-        public override T this[int indexRow, int indexColumn] { get => throw null; set => throw null; }
+        public override T this[Span<int> indices] { get => throw null; set => throw null; }
 
         public Buffer<T> Buffer { get { throw null; } }
         public bool IsColumnMajor { get { throw null; } }
@@ -194,22 +221,15 @@ namespace System.Numerics
 
         public override Tensor<TResult> CloneEmpty<TResult>() { throw null; }
     }
-
-    public static partial class SparseTensor
-    {
-        public static SparseTensor<T> FromTensor<T>(Tensor<T> tensor) { throw null; }
-        public static SparseTensor<T> FromTensor<T>(Tensor<T> tensor, bool compressColumn) { throw null; }
-    }
-
+    
     public partial class SparseTensor<T> : Tensor<T>
     {
         public SparseTensor(params int[] dimensions) : base(dimensions) { }
         public SparseTensor(int initialCapacity, params int[] dimensions) : base(dimensions) { }
 
 
-        public override T this[int index] { get => throw null; set => throw null; }
-        public override T this[params int[] indices] { get => throw null; set => throw null; }
-        public override T this[int indexRow, int indexColumn] { get => throw null; set => throw null; }
+        public override T this[Span<int> indices] { get => throw null; set => throw null; }
+
         public override Tensor<T> Clone() { throw null; }
 
         public override Tensor<T> CloneEmpty() { throw null; }
@@ -218,22 +238,14 @@ namespace System.Numerics
 
         public DenseTensor<T> ToDenseTensor() { throw null; }
     }
-
-    public static partial class CompressedSparseTensor
-    {
-        public static CompressedSparseTensor<T> FromTensor<T>(Tensor<T> tensor) { throw null; }
-        public static CompressedSparseTensor<T> FromTensor<T>(Tensor<T> tensor, bool compressColumn) { throw null; }
-        public static CompressedSparseTensor<T> FromSparseTensor<T>(SparseTensor<T> tensor) { throw null; }
-        public static CompressedSparseTensor<T> FromSparseTensor<T>(SparseTensor<T> tensor, bool compressColumn) { throw null; }
-
-        public static CompressedSparseTensor<T> OverCompressedSparseRows<T>(T[] values, int[] rowCounts, int[] remainingIndices, params int[] dimensions) { throw null; }
-        public static CompressedSparseTensor<T> OverCompressedSparseColumns<T>(T[] values, int[] columnCounts, int[] remainingIndices, params int[] dimensions) { throw null; }
-    }
+    
 
     public partial class CompressedSparseTensor<T> : Tensor<T>
     {
         public CompressedSparseTensor(T[] values, int[] compressedCounts, int[] remainingIndices, params int[] dimensions) : base(dimensions) { }
         public CompressedSparseTensor(T[] values, int[] compressedCounts, int[] remainingIndices, bool compressColumn, params int[] dimensions) : base(dimensions) { }
+        public CompressedSparseTensor(Buffer<T> values, Buffer<int> compressedCounts, Buffer<int> remainingIndices, params int[] dimensions) : base(dimensions) { }
+        public CompressedSparseTensor(Buffer<T> values, Buffer<int> compressedCounts, Buffer<int> remainingIndices, bool compressColumn, params int[] dimensions) : base(dimensions) { }
 
         public T[] Values { get { throw null; } }
         public int[] CompressedCounts { get { throw null; } }
@@ -244,9 +256,8 @@ namespace System.Numerics
         public DenseTensor<T> ToDenseTensor() { throw null; }
         public DenseTensor<T> ToSparseTensor() { throw null; }
 
-        public override T this[int index] { get => throw null; set => throw null; }
-        public override T this[params int[] indices] { get => throw null; set => throw null; }
-        public override T this[int indexRow, int indexColumn] { get => throw null; set => throw null; }
+        public override T this[Span<int> indices] { get => throw null; set => throw null; }
+
         public override Tensor<T> Clone() { throw null; }
 
         public override Tensor<T> CloneEmpty() { throw null; }
