@@ -175,7 +175,7 @@
                 case MethodType.Comparison:
                     return "{Op1Name}, {Op2Name}";
                 case MethodType.Contraction:
-                    return "left, right, leftAxes, rightAxes";
+                    return "{Op1Name}, {Op2Name}, {Op1Name}Axes, {Op2Name}Axes";
                 default:
                     throw new ArgumentException();
             }
@@ -195,7 +195,7 @@
                 case MethodType.Comparison:
                     return $"ValidateBinaryArgs({Op1Name}, {Op2Name}{suffix});";
                 case MethodType.Contraction:
-                    return $"var resultDimensions = ValidateContractArgs({Op1Name}, {Op2Name}, leftAxes, rightAxes{suffix});";
+                    return $"var resultDimensions = ValidateContractArgs({Op1Name}, {Op2Name}, {Op1Name}Axes, {Op2Name}Axes{suffix});";
                 default:
                     throw new ArgumentException();
             }
